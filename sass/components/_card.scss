@@ -25,7 +25,11 @@
       transform: rotateY(180deg);
 
       &-1 {
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
       }
     }
   }
@@ -47,7 +51,11 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
         url(../images/nat-5.jpg);
     }
 
@@ -102,5 +110,13 @@
         }
       }
     }
+  }
+
+  // Front Side Styling
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 500%;
+    transform: translate(-50%, -50%);
   }
 }
